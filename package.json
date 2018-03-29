@@ -1,9 +1,17 @@
 {
-  "name": "",
-  "version": "",
+  "name": "ninjamailer",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "nodemailer": "^4.6.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "version": "1.0.0",
+  "description": "ninjamailer",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
