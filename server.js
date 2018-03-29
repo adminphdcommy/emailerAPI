@@ -28,8 +28,8 @@ router.post('/sendEmail',function(req,res){
 
     nodemailer.createTestAccount((err,account) =>{
         let transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 587,
+            host: process.env.HOST,
+            port: process.env.EPORT,
             secure:false,
             auth:{
                 user: 'foodninjaapp@gmail.com',
