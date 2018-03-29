@@ -32,8 +32,8 @@ router.post('/sendEmail',function(req,res){
             port: process.env.EPORT,
             secure:false,
             auth:{
-                user: 'foodninjaapp@gmail.com',
-                pass: 'Foodninja1234qweR'
+                user: process.env.USER,
+                pass: process.env.PASS
             }
         });
     
